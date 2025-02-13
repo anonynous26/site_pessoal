@@ -15,14 +15,11 @@ header nav li {
     margin-left: 16px;
     font-size: 18px;
     font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
 }
 
 header h1 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 800;
-    font-style: normal;
 }
 
 header nav li a {
@@ -39,7 +36,7 @@ header .container {
 .container {
     max-width: 1280px;
     width: 100%;
-    margin: 0 200px;
+    margin: 0 auto;
 }
 
 #news h2 {
@@ -49,7 +46,6 @@ header .container {
     width: 40%;
     font-weight: 600;
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
 }
 
 .cards {
@@ -57,7 +53,6 @@ header .container {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 32px auto;
-    margin: 32px;
 }
 
 .card {
@@ -80,7 +75,6 @@ header .container {
 
 .card h3 {
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 800;
     font-size: 20px;
 }
@@ -112,8 +106,6 @@ header .container {
 .conect h3,
 .card p {
     font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
 }
 
 #login h3 {
@@ -193,4 +185,31 @@ footer {
     padding: 16px 0;
     background-color: #4a51b6;
     color: #ecf0f1;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .conect {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input,
+    form textarea,
+    button {
+        width: 100%;
+    }
 }
